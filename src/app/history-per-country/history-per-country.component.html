@@ -1,0 +1,31 @@
+<div>
+  <h6>
+    historical monthly statistics based on country
+  </h6>
+</div>
+<div class="header">
+
+  <div>
+    <select (change)="changeCountry($event)"  >
+      <option *ngFor="let country of countries"  [value]="country" >{{country}}</option>
+    </select>
+  </div>
+  <div>
+    <h5>{{country}}</h5>
+  </div>
+
+</div>
+<div class="chart" >
+  <apx-chart
+    [series]="chartOptions?.series"
+    [chart]="chartOptions?.chart"
+    [dataLabels]="chartOptions?.dataLabels"
+    [plotOptions]="chartOptions?.plotOptions"
+    [yaxis]="chartOptions?.yaxis"
+    [xaxis]="chartOptions?.xaxis"
+    [legend]="chartOptions?.legend"
+    [colors]="chartOptions?.colors"
+    [grid]="chartOptions?.grid"
+  ></apx-chart>
+
+</div>

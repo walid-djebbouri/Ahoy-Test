@@ -1,0 +1,28 @@
+@import "~leaflet/dist/leaflet.css";
+.map-wrapper {
+  overflow: auto;
+  width: 90%;
+  height: 500px;
+  margin: auto;
+}
+.map-border {
+  height: 100%;
+  width: 100%;
+}
+
+#map {
+  height: 100%;
+}
+.legend {
+  position: absolute;
+  bottom: 150px;
+  left: 75px;
+  z-index: 1;
+  width: 150px;
+  padding: 10px;
+  border:solid 1px  black;
+}
+h6{
+  text-align: center;
+  font-size: 22px;
+}
